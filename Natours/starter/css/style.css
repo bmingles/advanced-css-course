@@ -7,21 +7,67 @@ Dark green: #28b485
 
 */
 * {
-  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
+  color: #777;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 30px;
 }
 
 .header {
   background-image: linear-gradient(
-    to right bottom,
-    rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)
+    to bottom right,
+    rgba(126, 213, 111, 0.8),
+    rgba(40, 180, 133, 0.8)
   ), url(../img/hero.jpg);
   background-position: top;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   height: 95vh;
+  position: relative;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 35px;
+  margin-right: -35px; /* HACK: for last letter spacing */
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 16.6px;
+  margin-right: -16.6px; /* HACK: for last letter spacing */
+}
+
+.logo {
+  height: 35px;
+}
+
+.logo-box {
+  left: 40px;
+  position: absolute;
+  top: 40px;
+}
+
+.text-box {
+  left: 50%;
+  position: absolute;
+  top: 40%;
+  transform: translate(-50%, -50%);
 }
